@@ -1,0 +1,558 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url("../Assets/Gilroy-Light.otf");
+}
+
+@font-face {
+  font-family: Exbold;
+  src: url("../Assets/Gilroy-ExtraBold.otf"); 
+}
+
+/* ------------------------------------------------MAIN BACKGROUND------------------------------------------------------------------------- */
+/* .main{
+  height: 100vh;
+  width: 100%;
+  background-color: #F2F2F2;
+  position: absolute;
+  background-size: cover; 
+  background-position: center;
+} */
+
+.curve{
+  visibility: hidden;
+  position: absolute;
+}
+
+/*-----------------------------------------------------Background Image----------------------------------------------------------- */
+.image-box img{
+  position: absolute;
+  height: 35.875rem;
+  width: 75.688rem;
+  box-shadow: 12px 11px 30px -5px rgba(0,0,0,0.75);
+  margin: 1% 10%;;
+  overflow: hidden;
+  top: 2.5rem; 
+}
+
+.image-box .heading{
+  margin: 4rem 0 0 21rem;
+  position: relative;
+  font-size: 1.25rem;
+  font-family: 'Exbold';
+} 
+
+/* --------------------------------------------------FORM BOX------------------------------------------------------------------------- */
+
+.form-box{
+  position: relative;
+  height: 30rem;
+  width: 23.5rem;
+  background: #701212;
+  margin: 0% 14%;
+  border-radius: 0.938rem;
+  padding: 0px 20px;
+}
+
+.form-box .title{
+  height: 27px;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.form-box .title span{
+  font-size: 22px;
+  color: white;
+  font-family: Gilroy;
+} 
+
+.email-content{
+  padding-top: 10px;
+  padding-left: 1.5rem;
+}
+
+.form-box .name,
+.form-box .password,
+.form-box .conname{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 15px;
+  font-family: Gilroy;
+}
+
+.form-box .email,
+.form-box .uname,
+.form-box .sname{
+  padding: 10px 0px; 
+  color: white;
+  font-size: 15px;
+  font-family: Gilroy; 
+}
+
+.form-box .input-field{  
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0.5px solid #fff;
+  outline: none;
+  background: transparent; 
+  color: white; 
+  width: 66%;
+}
+
+.error{
+  font-size: 0.688rem;
+}
+
+.form-box .button-line{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 0.563rem;   
+  font-family: Gilroy; 
+}
+
+.form-box .button-line .btn_main {
+ padding-top: 15px;
+}
+
+.signup_sign{
+  padding: 8px 16px;
+  border-radius: 15px;
+  border: 0px;
+  text-transform: uppercase;
+  color: #701212;
+  font-weight: 600;
+}
+
+.icons{
+  text-align: right; 
+  margin-right: 35px; 
+}
+
+.form-box .icons p{
+  color: white;
+  font-size: 12px;   
+} 
+
+.icon_btn{
+  margin-top: 5px;
+}
+
+.s_icon{  
+  background-color: white;  
+  border-radius: 8px;
+  color: rgb(51, 51, 236);
+  display: flex;
+  flex-direction: row;  
+  justify-content:space-between;  
+  padding: 5px;
+  margin-right: 2px; 
+ 
+} 
+
+#fb_icon{
+  margin-left: 0.3rem;
+  margin-right: 0.4rem;
+  padding: 5.8px 8.9px;
+}
+
+
+.form-box .last-line{
+  text-align: center;
+  margin-top: 21px;
+  color: white; 
+  font-size: 11px;
+  font-family: Gilroy;
+}
+
+.image-box .footer{
+  position: absolute;
+  margin: 0.5rem 0 0 18.5rem;
+  font-size: 9px;
+  font-family: Gilroy;
+} 
+
+@media screen and (max-width:1025px) and (min-width: 769px) {
+  .image-box img{
+      height: 38.875rem;
+      width: 59.688rem;
+      box-shadow: 12px 11px 30px -5px rgb(0 0 0 / 75%);
+      margin: 1% 3%;
+      top: 2.5rem;
+  }
+  
+  .image-box .heading{
+      margin: 3rem 0 0 13rem;
+      font-size: 1rem;
+  } 
+  
+  .form-box{
+      position: relative;
+      height: 34rem; 
+      width: 23.5rem; 
+      background: #701212;
+      margin: 0% 8%;
+      border-radius: 0.938rem;
+      padding: 0px 20px;
+  }
+
+  .form-box .title{
+    height: 40px;
+    text-align: center;
+    padding-top: 0.5rem;
+  }
+  
+  .form-box .title span{
+    font-size: 22px;
+    color: white;
+    font-family: Gilroy;
+  }
+  
+  .pword, .cword, .fname, .mname, .lname, .country, .city{
+    padding-top: 0.2rem;
+  }
+  
+  .email-content{
+    padding-top: 0px;
+    padding-left: 1.5rem;
+  }
+
+  .form-box .last-line{
+    text-align: center;
+    margin-top: 19px;
+    color: white; 
+    font-size: 11px;
+    font-family: Gilroy;
+  }
+  
+  .image-box .footer{
+      margin: 0.2rem 0 0 8.9rem;
+      font-size: 9px;
+  } 
+
+}
+
+@media screen and (max-width:768px) and (min-width: 481px) {
+  body{
+      background-color: #701212;
+      height: 100vh;
+      width: 100%;
+      /* overflow: hidden;  */
+  }
+
+  .curve{
+      visibility: hidden; 
+  }
+
+  .image-box img{
+      visibility: hidden;
+  }
+
+  .image-box .heading{
+      visibility: hidden;
+  }
+
+  .form-box {
+      margin: -3.437rem 13.5rem 4.375rem 6.75rem;
+      height: 78.875rem;
+      width: 60.25rem;
+      overflow: hidden;
+  }
+  
+  .form-box .title{
+      height: 116px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .form-box .title span{
+      font-size: 97px;
+  } 
+  
+  .form-box .title span{
+      font-size: 3.625rem; 
+  } 
+  
+  .email-content{
+      padding-top: 0.375rem;
+  }
+  
+  .form-box .name,
+  .form-box .password,
+  .form-box .conname{
+      font-size: 2.188rem;
+  }
+  
+  .form-box .email,
+  .form-box .uname,
+  .form-box .sname{
+      padding: 20px 0px; 
+      color: white;
+      font-size: 2.188rem;
+      font-family: Gilroy; 
+  }
+  
+  .form-box .input-field{  
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
+      border-bottom: 0.5px solid #fff;
+      outline: none;
+      background: transparent; 
+      color: white; 
+      width: 66%;
+      font-size: 2.5rem;
+  }
+
+  .error {
+    font-size: 1.888rem;
+  }
+
+  .wide_line{
+      width: 85% !important;
+  }
+  
+  .form-box .button-line{
+      justify-content: space-evenly;
+      padding-top: 2.5rem;
+  }
+  
+  .form-box .button-line .btn_main {
+     padding-top: 15px;
+  }
+  
+  .signup_sign{
+      padding: 28px 50px;
+      border-radius: 41px;
+      border: 0px;
+      font-size: 2rem;
+      text-transform: uppercase;
+      color: #701212;
+      font-weight: 600;
+  }
+  
+  .icons{
+      text-align: right; 
+      margin-right: 35px; 
+  }
+  
+  .form-box .icons p{
+      color: white;
+      font-size: 2.063rem;   
+  } 
+  
+  .icon_btn{
+      margin-top: 0.713rem;
+  }
+  
+  .s_icon{  
+      background-color: white;  
+      border-radius: 0.5rem;
+      color: rgb(51, 51, 236);
+      display: flex;
+      flex-direction: row;  
+      justify-content:space-between;  
+      padding: 1.313rem;
+      margin-right: 0.125rem; 
+      font-size: 1.7rem;
+     
+  } 
+  
+  #fb_icon{
+      padding: 1.3rem 1.494rem;
+  }
+  
+  .form-box .last-line{
+      text-align: center;
+      margin-top: 3.913rem;
+      font-size: 1.688rem;
+  }
+  
+  .image-box .footer{
+      position: absolute;
+      visibility: hidden;
+  }     
+}
+
+
+
+@media screen and (max-width:480px) and (min-width: 320px) {
+  body{
+      background-color: #701212;
+      height: 100vh;
+      width: 100%;
+      overflow: hidden; 
+  }
+
+  .curve{
+      visibility: visible;
+      background-color: #fff;
+      width:44.563rem;
+      height:21.188rem;
+      border-radius: 0% 100% 100% 0% / 30% 1% 99% 70% ;
+      margin-top: -5.5rem;
+  }
+
+  .image-box img{
+      visibility: hidden;
+  }
+
+  .image-box .heading{
+      visibility: hidden;
+  }
+  
+  .logo{
+      visibility: visible;
+      margin-left: 11rem !important; 
+      padding-top: 6rem !important;
+      height: 7rem !important;
+      width: 18rem !important;
+  }
+
+  .mob_title{
+      visibility: visible;
+      font-family: Exbold;
+      font-size: 4.6rem;
+      color: #fff;
+      margin: -4rem 0rem 0rem 45rem;
+  }
+
+  .form-box{
+      position: relative;
+      height: 122rem;
+      width: 61.5rem;
+      z-index: -1;
+  }
+  
+  .form-box .title{
+      visibility: hidden;
+  }
+  
+  .form-box .title span{
+      font-size: 17px;
+      color: white;
+      font-weight: lighter;
+      border-bottom: 1.5px solid #fff;  
+      font-family: Gilroy;
+  } 
+  
+  .email-content{
+      padding-top: 8.75rem;
+      padding-left: 9rem;
+  }
+  
+  .form-box .name,
+  .form-box .password,
+  .form-box .conname{
+      flex-direction: column;
+      color: white;
+      font-size:44px;
+      /* padding-top: 5rem; */
+  }
+
+  .pword, .cword, .fname, .mname, .lname, .country, .city{
+    padding-top: 1.5rem;
+  }
+  
+  .form-box .email,
+  .form-box .uname,
+  .form-box .sname{
+      padding-top: 1.5rem;
+      font-size: 44px;
+      flex-direction: column;
+  }
+  
+  .form-box .input-field{  
+      width: 80%;
+      font-size: 2.5rem;
+  }
+
+  .error {
+    font-size: 2.488rem;
+  }
+
+  /* NEW BOTTOM LINE  */
+  .form-box .button-line{ 
+      display: flex;
+      flex-direction: row;
+      justify-content:space-evenly;
+      padding-top: 37px;   
+      font-family: Gilroy; 
+      margin: 0 9rem 0 0;
+  }
+  
+  .form-box .button-line .btn_main {
+     padding-top: 0px;
+     margin-top: 1rem;
+  }
+  
+  .signup_sign{
+      padding: 20px 26px;
+      border-radius: 60px;
+      border: 0px;
+      text-transform: uppercase;
+      color: #701212;
+      font-weight: 600;
+      font-size: 3rem;
+  }
+  
+  .icons{
+      text-align: right; 
+      margin-right: 35px; 
+  }
+  
+  .form-box .icons p{
+      color: white;
+      font-size: 34px;   
+  } 
+  
+  .icon_btn{
+      margin-top: 1px;
+  }
+  
+  .s_icon{  
+      background-color: white;  
+      border-radius: 8px;
+      color: rgb(51, 51, 236);
+      display: flex;
+      flex-direction: row;  
+      justify-content:space-between;   
+      padding: 15px;
+      margin-right: 2px;  
+      font-size: 3rem;
+     
+  } 
+  
+  i#fb_icon {
+    font-size: 3rem;
+    width: 3.4rem;
+    padding: 1rem 1.3rem 1rem 0;
+  }
+  
+  .s_icon #fb_icon{
+      padding: 13.8px 20.9px;
+      margin-left: 0.5rem;
+      margin-right: 0.7rem;
+      font-size: 1rem;
+  }
+    
+  .form-box .last-line{
+      margin: 60px 177px 0 4px;
+      color: white; 
+      font-size: 31px;
+      font-family: Gilroy;
+  
+  }
+  
+  .image-box .footer{
+      visibility: hidden;
+  }     
+}  
